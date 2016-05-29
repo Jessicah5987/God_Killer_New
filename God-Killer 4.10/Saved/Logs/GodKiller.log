@@ -1,673 +1,729 @@
-﻿[2016.05.27-02.11.29:411][  0]Log file open, 05/26/16 19:11:29
-[2016.05.27-02.11.29:411][  0]LogInit:Display: Running engine for game: GodKiller
-[2016.05.27-02.11.29:411][  0]LogPlatformFile: Not using cached read wrapper
-[2016.05.27-02.11.29:411][  0]LogInit:Display: RandInit(-1119248871) SRandInit(-1119248870).
-[2016.05.27-02.11.29:411][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2016.05.27-02.11.29:411][  0]LogStats: Stats thread started at 0.105168
-[2016.05.27-02.11.29:411][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.05.27-02.11.29:412][  0]LogInit: API Version: 2758231
-[2016.05.27-02.11.29:412][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
-[2016.05.27-02.11.29:412][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.05.27-02.11.29:412][  0]LogInit: Build Configuration: Development
-[2016.05.27-02.11.29:412][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.05.27-02.11.29:412][  0]LogInit: Command line:  
-[2016.05.27-02.11.29:412][  0]LogInit: Base directory: C:/Program Files (x86)/Unreal Engine/4.10/Engine/Binaries/Win64/
-[2016.05.27-02.11.29:412][  0]LogInit: Rocket: 1
-[2016.05.27-02.11.29:453][  0]LogInit: Using libcurl 7.41.0
-[2016.05.27-02.11.29:453][  0]LogInit:  - built for x86_64-pc-win32
-[2016.05.27-02.11.29:453][  0]LogInit:  - supports SSL with WinSSL
-[2016.05.27-02.11.29:453][  0]LogInit:  - other features:
-[2016.05.27-02.11.29:454][  0]LogInit:      CURL_VERSION_SSL
-[2016.05.27-02.11.29:454][  0]LogInit:      CURL_VERSION_IPV6
-[2016.05.27-02.11.29:454][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.05.27-02.11.29:454][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.05.27-02.11.29:454][  0]LogInit:      CURL_VERSION_IDN
-[2016.05.27-02.11.29:454][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.05.27-02.11.29:454][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.05.27-02.11.29:454][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.05.27-02.11.29:454][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.05.27-02.11.29:454][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.05.27-02.11.29:523][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.05.27-02.11.29:529][  0]LogInit: Object subsystem initialized
-[2016.05.27-02.11.29:530][  0]LogInit: Selected Device Profile: [Windows]
-[2016.05.27-02.11.29:530][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.05.27-02.11.29:552][  0]LogInit: Computer: BELOTH
-[2016.05.27-02.11.29:552][  0]LogInit: User: Welsper427
-[2016.05.27-02.11.29:552][  0]LogInit: CPU Page size=4096, Cores=4
-[2016.05.27-02.11.29:552][  0]LogInit: High frequency timer resolution =2.435810 MHz
-[2016.05.27-02.11.29:553][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
-[2016.05.27-02.11.29:553][  0]LogMemory: Platform Memory Stats for Windows
-[2016.05.27-02.11.29:553][  0]LogMemory: Process Physical Memory: 58.96 MB used, 58.96 MB peak
-[2016.05.27-02.11.29:553][  0]LogMemory: Process Virtual Memory: 62.53 MB used, 62.53 MB peak
-[2016.05.27-02.11.29:553][  0]LogMemory: Physical Memory: 3411.58 MB used, 16333.11 MB total
-[2016.05.27-02.11.29:553][  0]LogMemory: Virtual Memory: 357.06 MB used, 8388608.00 MB total
-[2016.05.27-02.11.29:815][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.05.27-02.11.30:183][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970M (Feature Level 11_0)
-[2016.05.27-02.11.30:183][  0]LogD3D11RHI: Adapter has 2988MB of dedicated video memory, 0MB of dedicated system memory, and 7910MB of shared system memory, 1 output[s]
-[2016.05.27-02.11.30:183][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.05.27-02.11.30:187][  0]LogD3D11RHI: !Direct3DDevice
-[2016.05.27-02.11.30:187][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.05.27-02.11.30:197][  0]LogD3D11RHI: Async texture creation enabled
-[2016.05.27-02.11.30:212][  0]LogShaderCompilers: Guid format shader working directory is -22 characters bigger than the processId version (F:/GK_Stuff/God_Killer_New/God-Killer 4.10/Intermediate/Shaders/WorkingDirectory/6684/).
-[2016.05.27-02.11.30:212][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'E:/Temp/UnrealShaderWorkingDir/69261EC148D1CB151B620289F8080819/'.
-[2016.05.27-02.11.30:212][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.05.27-02.11.31:593][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.05.27-02.11.31:605][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.05.27-02.11.31:617][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.05.27-02.11.31:629][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.05.27-02.11.31:642][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.05.27-02.11.31:653][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.05.27-02.11.31:664][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.05.27-02.11.31:676][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.05.27-02.11.31:687][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.05.27-02.11.31:698][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.05.27-02.11.31:709][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.05.27-02.11.31:732][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.05.27-02.11.31:732][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.05.27-02.11.31:741][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.05.27-02.11.31:787][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.05.27-02.11.31:798][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.05.27-02.11.31:810][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.05.27-02.11.31:822][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.05.27-02.11.31:822][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.05.27-02.11.32:181][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.05.27-02.11.32:310][  0]LogDerivedDataCache: Loaded boot cache 0.13s 41MB C:/Users/Welsper427/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.05.27-02.11.32:310][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Welsper427/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.05.27-02.11.32:310][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/GK_Stuff/God_Killer_New/God-Killer 4.10/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.05.27-02.11.32:310][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.05.27-02.11.32:310][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/GK_Stuff/God_Killer_New/God-Killer 4.10/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.05.27-02.11.32:310][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.05.27-02.11.32:368][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.05.27-02.11.32:380][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Welsper427/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.05.27-02.11.32:771][  0]LogInit: Selected Device Profile: [Windows]
-[2016.05.27-02.11.32:772][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2016.05.27-02.11.32:828][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.05.27-02.11.32:828][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.05.27-02.11.33:267][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.05.27-02.11.35:432][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.05.27-02.11.35:715][  0]LogAssetRegistry: FAssetRegistry took 0.0097 seconds to start up
-[2016.05.27-02.11.36:218][  0]SourceControl: Info Source control is disabled
-[2016.05.27-02.11.36:245][  0]SourceControl: Info Source control is disabled
-[2016.05.27-02.11.36:291][  0]SourceControl: Info Source control is disabled
-[2016.05.27-02.11.36:323][  0]SourceControl: Info Source control is disabled
-[2016.05.27-02.11.36:806][  0]LogObj: 28633 objects as part of root set at end of initial load.
-[2016.05.27-02.11.36:806][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
-[2016.05.27-02.11.36:892][  0]LogEngine: Initializing Engine...
-[2016.05.27-02.11.36:895][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.05.27-02.11.36:903][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.05.27-02.11.37:033][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.05.27-02.11.37:054][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.05.27-02.11.37:063][  0]LogInit: FAudioDevice initialized.
-[2016.05.27-02.11.37:082][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Welsper427/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.05.27-02.11.37:084][  0]LogInit: Texture streaming: Enabled
-[2016.05.27-02.11.37:105][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2016.05.27-02.11.37:105][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.05.27-02.11.37:105][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 2579339740fed40c06e0bb862a736733|b7ce396ac5c943b599479ca52b5cfda1|c3a40ecc-91b3-4afb-bff8-50ece72de190
-[2016.05.27-02.11.37:105][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2016.05.27-02.11.37:118][  0]LogInit: Transaction tracking system initialized
-[2016.05.27-02.11.37:212][  0]BlueprintLog: New page: Editor Load
-[2016.05.27-02.11.37:674][  0]LocalizationService: Info Localization service is disabled
-[2016.05.27-02.11.37:890][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/FirstPersonOverview'
-[2016.05.27-02.11.37:890][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/FirstPersonOverview'
-[2016.05.27-02.11.37:890][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/FirstPersonBP/FirstPersonOverview.FirstPersonOverview_C'
-[2016.05.27-02.11.37:933][  0]LogConsoleResponse:Display: 
-[2016.05.27-02.11.38:073][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.05.27-02.11.38:274][  0]LogFileCache: Scanning file cache for directory 'F:/GK_Stuff/God_Killer_New/God-Killer 4.10/Content/' took 0.04s
-[2016.05.27-02.11.38:274][  0]SourceControl: Info Source control is disabled
-[2016.05.27-02.11.38:274][  0]Cmd: MAP LOAD FILE="F:/GK_Stuff/God_Killer_New/God-Killer 4.10/Content/Scene/NewCave.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.05.27-02.11.38:296][  0]LightingResults: New page: Lighting Build
-[2016.05.27-02.11.38:299][  0]MapCheck: New page: Map Check
-[2016.05.27-02.11.38:299][  0]LightingResults: New page: Lighting Build
-[2016.05.27-02.11.38:308][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000258A2AC0
-[2016.05.27-02.11.39:964][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
-[2016.05.27-02.11.39:965][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0011.73] Compile of GnawmerWander successful, but with 1 Warning(s) [in 2 ms]
-[2016.05.27-02.11.39:965][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0011.73] Compile of GnawmerWander successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.39:965][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0011.73] Compile of GnawmerWander successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.40:168][  0]LogBlueprint:Warning: [compiler Wander2] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
-[2016.05.27-02.11.40:169][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0011.93] Compile of Wander2 successful, but with 1 Warning(s) [in 2 ms]
-[2016.05.27-02.11.40:169][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0011.93] Compile of Wander2 successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.40:169][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0011.93] Compile of Wander2 successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.40:883][  0]LogBlueprint:Warning: [compiler Wander] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
-[2016.05.27-02.11.40:884][  0]LogBlueprint:Warning: [compiler Wander] Warning [0012.65] Compile of Wander successful, but with 1 Warning(s) [in 2 ms]
-[2016.05.27-02.11.40:884][  0]LogBlueprint:Warning: [compiler Wander] Warning [0012.65] Compile of Wander successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.40:884][  0]LogBlueprint:Warning: [compiler Wander] Warning [0012.65] Compile of Wander successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.41:600][  0]LogBlueprint:Warning: [compiler Wander3] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
-[2016.05.27-02.11.41:600][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0013.37] Compile of Wander3 successful, but with 1 Warning(s) [in 2 ms]
-[2016.05.27-02.11.41:600][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0013.37] Compile of Wander3 successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.41:600][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0013.37] Compile of Wander3 successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.42:375][  0]LogBlueprint:Warning: [compiler Gui] Warning 'gnawmers' is already a 'Enemy 1', you don't need  Cast To Enemy1 .
-[2016.05.27-02.11.42:380][  0]LogBlueprint:Warning: [compiler Gui] Warning Event Reply  Return Value  should not be empty.  Return a reply such as Handled or Unhandled.
-[2016.05.27-02.11.42:380][  0]LogBlueprint:Warning: [compiler Gui] Warning Event Reply  Return Value  should not be empty.  Return a reply such as Handled or Unhandled.
-[2016.05.27-02.11.42:382][  0]LogBlueprint:Warning: [compiler Gui] Warning [0014.15] Compile of Gui successful, but with 3 Warning(s) [in 12 ms]
-[2016.05.27-02.11.42:383][  0]LogBlueprint:Warning: [compiler Gui] Warning [0014.15] Compile of Gui successful, but with 4 Warning(s) [in 0 ms]
-[2016.05.27-02.11.42:383][  0]LogBlueprint:Warning: [compiler Gui] Warning [0014.15] Compile of Gui successful, but with 5 Warning(s) [in 0 ms]
-[2016.05.27-02.11.42:499][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning 'gnawmers' is already a 'Enemy 1', you don't need  Cast To Enemy1 .
-[2016.05.27-02.11.42:499][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0014.26] Compile of GnawmersHealth successful, but with 1 Warning(s) [in 1 ms]
-[2016.05.27-02.11.42:499][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0014.26] Compile of GnawmersHealth successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.42:499][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0014.26] Compile of GnawmersHealth successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:178][  0]LogBlueprint:Warning: [compiler Wander4] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
-[2016.05.27-02.11.43:179][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0014.94] Compile of Wander4 successful, but with 1 Warning(s) [in 2 ms]
-[2016.05.27-02.11.43:179][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0014.94] Compile of Wander4 successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:179][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0014.94] Compile of Wander4 successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:390][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
-[2016.05.27-02.11.43:391][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0015.16] Compile of GnawmerWander successful, but with 1 Warning(s) [in 2 ms]
-[2016.05.27-02.11.43:391][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0015.16] Compile of GnawmerWander successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:391][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0015.16] Compile of GnawmerWander successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:420][  0]LogBlueprint:Warning: [compiler Wander2] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
-[2016.05.27-02.11.43:421][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0015.19] Compile of Wander2 successful, but with 1 Warning(s) [in 2 ms]
-[2016.05.27-02.11.43:421][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0015.19] Compile of Wander2 successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:421][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0015.19] Compile of Wander2 successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:451][  0]LogBlueprint:Warning: [compiler Wander] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
-[2016.05.27-02.11.43:452][  0]LogBlueprint:Warning: [compiler Wander] Warning [0015.22] Compile of Wander successful, but with 1 Warning(s) [in 2 ms]
-[2016.05.27-02.11.43:452][  0]LogBlueprint:Warning: [compiler Wander] Warning [0015.22] Compile of Wander successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:452][  0]LogBlueprint:Warning: [compiler Wander] Warning [0015.22] Compile of Wander successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:478][  0]LogBlueprint:Warning: [compiler Wander3] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
-[2016.05.27-02.11.43:478][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0015.24] Compile of Wander3 successful, but with 1 Warning(s) [in 2 ms]
-[2016.05.27-02.11.43:478][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0015.24] Compile of Wander3 successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:479][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0015.24] Compile of Wander3 successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:521][  0]LogBlueprint:Warning: [compiler Gui] Warning 'gnawmers' is already a 'Enemy 1', you don't need  Cast To Enemy1 .
-[2016.05.27-02.11.43:525][  0]LogBlueprint:Warning: [compiler Gui] Warning Event Reply  Return Value  should not be empty.  Return a reply such as Handled or Unhandled.
-[2016.05.27-02.11.43:525][  0]LogBlueprint:Warning: [compiler Gui] Warning Event Reply  Return Value  should not be empty.  Return a reply such as Handled or Unhandled.
-[2016.05.27-02.11.43:527][  0]LogBlueprint:Warning: [compiler Gui] Warning [0015.29] Compile of Gui successful, but with 3 Warning(s) [in 11 ms]
-[2016.05.27-02.11.43:527][  0]LogBlueprint:Warning: [compiler Gui] Warning [0015.29] Compile of Gui successful, but with 4 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:529][  0]LogBlueprint:Warning: [compiler Gui] Warning [0015.29] Compile of Gui successful, but with 5 Warning(s) [in 1 ms]
-[2016.05.27-02.11.43:547][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning 'gnawmers' is already a 'Enemy 1', you don't need  Cast To Enemy1 .
-[2016.05.27-02.11.43:548][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0015.31] Compile of GnawmersHealth successful, but with 1 Warning(s) [in 1 ms]
-[2016.05.27-02.11.43:548][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0015.31] Compile of GnawmersHealth successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:548][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0015.31] Compile of GnawmersHealth successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:556][  0]LogBlueprint:Warning: [compiler Wander4] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
-[2016.05.27-02.11.43:557][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0015.32] Compile of Wander4 successful, but with 1 Warning(s) [in 2 ms]
-[2016.05.27-02.11.43:557][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0015.32] Compile of Wander4 successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.43:557][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0015.32] Compile of Wander4 successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.51:173][  0]LogBlueprint:Warning: [compiler NewCave] Warning Node  Unknown  is not referencing a valid level actor
-[2016.05.27-02.11.51:178][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0022.94] Compile of NewCave successful, but with 1 Warning(s) [in 63 ms]
-[2016.05.27-02.11.51:178][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0022.94] Compile of NewCave successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.51:178][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0022.94] Compile of NewCave successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.51:250][  0]LogBlueprint:Warning: [compiler NewCave] Warning Node  Unknown  is not referencing a valid level actor
-[2016.05.27-02.11.51:256][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0023.02] Compile of NewCave successful, but with 1 Warning(s) [in 63 ms]
-[2016.05.27-02.11.51:256][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0023.02] Compile of NewCave successful, but with 2 Warning(s) [in 0 ms]
-[2016.05.27-02.11.51:256][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0023.02] Compile of NewCave successful, but with 3 Warning(s) [in 0 ms]
-[2016.05.27-02.11.57:951][  0]LogAIModule: Creating AISystem for world NewCave
-[2016.05.27-02.11.58:139][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.05.27-02.11.58:168][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.05.27-02.11.58:326][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 158.207ms to complete.
-[2016.05.27-02.11.58:326][  0]LogFileHelpers: Loading map 'NewCave' took 20.052
-[2016.05.27-02.11.58:407][  0]LogCollectionManager: Loaded 0 collections in 0.002291 seconds
-[2016.05.27-02.11.58:478][  0]LogFileCache: Scanning file cache for directory 'F:/GK_Stuff/God_Killer_New/God-Killer 4.10/Saved/Collections/' took 0.01s
-[2016.05.27-02.11.58:478][  0]LogFileCache: Scanning file cache for directory 'F:/GK_Stuff/God_Killer_New/God-Killer 4.10/Content/Developers/Welsper427/Collections/' took 0.01s
-[2016.05.27-02.11.58:478][  0]LogFileCache: Scanning file cache for directory 'F:/GK_Stuff/God_Killer_New/God-Killer 4.10/Content/Collections/' took 0.00s
-[2016.05.27-02.11.58:478][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
-[2016.05.27-02.11.58:490][  0]LogContentBrowser: Native class hierarchy populated in 0.0114 seconds. Added 1893 classes and 338 folders.
-[2016.05.27-02.11.58:499][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2016.05.27-02.11.58:644][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2016.05.27-02.11.58:714][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
-[2016.05.27-02.11.58:844][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.05.27-02.11.58:848][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.05.27-02.11.58:869][  0]LogLoad: Full Startup: 30.63 seconds (BP compile: 1.00 seconds)
-[2016.05.27-02.11.59:211][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.05.27-02.11.59:211][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named GameplayCueNotify
-[2016.05.27-02.11.59:211][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named GameplayCueNotify_Blueprint
-[2016.05.27-02.11.59:211][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_BodySetup
-[2016.05.27-02.11.59:211][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimTreeInstance
-[2016.05.27-02.11.59:211][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VimInstance
-[2016.05.27-02.11.59:211][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VimBlueprint
-[2016.05.27-02.11.59:211][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VimGeneratedClass
-[2016.05.27-02.11.59:211][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VimBlueprintFactory
-[2016.05.27-02.11.59:211][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ReverbVolume
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ReverbVolumeToggleable
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlueprintActorBase
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named WorldInfo
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_Handle
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_RadialForceComponent
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SoundMode
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_ThrusterComponent
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_Thruster
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_ConstraintSetup
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_BSJointSetup
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_HingeSetup
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_PrismaticSetup
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_SkelJointSetup
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_ConstraintComponent
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_ConstraintActor
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_BSJointActor
-[2016.05.27-02.11.59:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_HingeActor
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_PrismaticActor
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PhysicsBSJointActor
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PhysicsHingeActor
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PhysicsPrismaticActor
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EMovementMode
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SensingComponent
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MovementComp_Character
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MovementComp_Rotating
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MovementComp_Projectile
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VehicleSim
-[2016.05.27-02.11.59:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VehicleSimNoDrive
-[2016.05.27-02.11.59:214][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MovementComp_Vehicle
-[2016.05.27-02.11.59:214][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MovementComp_VehicleNoDrive
-[2016.05.27-02.11.59:214][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DefaultPawnMovement
-[2016.05.27-02.11.59:214][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named StaticMeshReplicatedComponent
-[2016.05.27-02.11.59:214][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SkeletalMeshReplicatedComponent
-[2016.05.27-02.11.59:214][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named Vehicle
-[2016.05.27-02.11.59:214][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VehicleMovementComponent
-[2016.05.27-02.11.59:214][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VehicleMovementComponent4W
-[2016.05.27-02.11.59:214][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old suboject named PointLightComponent0 (old class PointLightComponent)
-[2016.05.27-02.11.59:215][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old suboject named DirectionalLightComponent0 (old class DirectionalLightComponent)
-[2016.05.27-02.11.59:215][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old suboject named SpotLightComponent0 (old class SpotLightComponent)
-[2016.05.27-02.11.59:215][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old suboject named SpectatorMovement0 (old class DefaultPawn)
-[2016.05.27-02.11.59:215][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old suboject named DefaultPawnMovement0 (old class DefaultPawn)
-[2016.05.27-02.11.59:215][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named /Script/BlueprintGraph.K2Node_CastToInterface
-[2016.05.27-02.11.59:215][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named K2Node_CallSuperFunction
-[2016.05.27-02.11.59:216][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named K2Node_MathExpression
-[2016.05.27-02.11.59:216][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named /Script/CoreUObject.K2Node_MathExpression
-[2016.05.27-02.11.59:216][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named K2Node_Comment
-[2016.05.27-02.11.59:216][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EdGraphNode_Comment
-[2016.05.27-02.11.59:216][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SpotLightMovable
-[2016.05.27-02.11.59:216][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SpotLightStatic
-[2016.05.27-02.11.59:216][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SpotLightStationary
-[2016.05.27-02.11.59:217][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PointLightMovable
-[2016.05.27-02.11.59:217][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PointLightStatic
-[2016.05.27-02.11.59:217][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PointLightStationary
-[2016.05.27-02.11.59:217][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DirectionalLightMovable
-[2016.05.27-02.11.59:217][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DirectionalLightStatic
-[2016.05.27-02.11.59:217][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DirectionalLightStationary
-[2016.05.27-02.11.59:218][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named InterpActor
-[2016.05.27-02.11.59:218][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PhysicsActor
-[2016.05.27-02.11.59:218][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SkeletalPhysicsActor
-[2016.05.27-02.11.59:218][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SingleAnimSkeletalActor
-[2016.05.27-02.11.59:218][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SingleAnimSkeletalComponent
-[2016.05.27-02.11.59:218][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DynamicBlockingVolume
-[2016.05.27-02.11.59:219][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DynamicPhysicsVolume
-[2016.05.27-02.11.59:219][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DynamicTriggerVolume
-[2016.05.27-02.11.59:219][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_SkeletalControlBase
-[2016.05.27-02.11.59:219][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_TwoBoneIK
-[2016.05.27-02.11.59:219][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_RotationMultiplier
-[2016.05.27-02.11.59:220][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_ModifyBone
-[2016.05.27-02.11.59:220][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_CopyBone
-[2016.05.27-02.11.59:220][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_SpringBone
-[2016.05.27-02.11.59:220][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named NavAreaDefinition
-[2016.05.27-02.11.59:221][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named NavAreaDefault
-[2016.05.27-02.11.59:221][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named NavAreaNull
-[2016.05.27-02.11.59:221][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SmartNavLinkComponent
-[2016.05.27-02.11.59:221][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ELockedAxis
-[2016.05.27-02.11.59:221][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_RunQuery
-[2016.05.27-02.11.59:222][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MoveComponentAction
-[2016.05.27-02.11.59:222][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AIDebugComponent
-[2016.05.27-02.11.59:222][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionTerrainLayerCoords
-[2016.05.27-02.11.59:222][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionTerrainLayerSwitch
-[2016.05.27-02.11.59:222][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionTerrainLayerWeight
-[2016.05.27-02.11.59:223][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named Landscape
-[2016.05.27-02.11.59:223][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeGizmoActiveActor
-[2016.05.27-02.11.59:223][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeGizmoActor
-[2016.05.27-02.11.59:223][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeProxy
-[2016.05.27-02.11.59:224][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ControlPointMeshComponent
-[2016.05.27-02.11.59:224][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeComponent
-[2016.05.27-02.11.59:224][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeGizmoRenderComponent
-[2016.05.27-02.11.59:224][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeHeightfieldCollisionComponent
-[2016.05.27-02.11.59:225][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeInfo
-[2016.05.27-02.11.59:225][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeInfoMap
-[2016.05.27-02.11.59:225][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeLayerInfoObject
-[2016.05.27-02.11.59:225][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeMaterialInstanceConstant
-[2016.05.27-02.11.59:226][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeMeshCollisionComponent
-[2016.05.27-02.11.59:226][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeSplineControlPoint
-[2016.05.27-02.11.59:226][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeSplineSegment
-[2016.05.27-02.11.59:226][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeSplinesComponent
-[2016.05.27-02.11.59:227][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionLandscapeLayerBlend
-[2016.05.27-02.11.59:227][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionLandscapeLayerCoords
-[2016.05.27-02.11.59:227][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionLandscapeLayerSwitch
-[2016.05.27-02.11.59:228][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionLandscapeLayerWeight
-[2016.05.27-02.11.59:228][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionLandscapeVisibilityMask
-[2016.05.27-02.11.59:228][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ProceduralFoliageActor
-[2016.05.27-02.11.59:228][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ProceduralFoliage
-[2016.05.27-02.11.59:229][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm
-[2016.05.27-02.11.59:229][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_Automatic
-[2016.05.27-02.11.59:229][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_BitwiseCompressOnly
-[2016.05.27-02.11.59:230][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_LeastDestructive
-[2016.05.27-02.11.59:230][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_PerTrackCompression
-[2016.05.27-02.11.59:230][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_RemoveEverySecondKey
-[2016.05.27-02.11.59:230][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_RemoveLinearKeys
-[2016.05.27-02.11.59:231][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_RemoveTrivialKeys
-[2016.05.27-02.11.59:231][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_RevertToRaw
-[2016.05.27-02.11.59:231][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AIController
-[2016.05.27-02.11.59:232][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AIResourceInterface
-[2016.05.27-02.11.59:232][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AISystem
-[2016.05.27-02.11.59:232][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AITypes
-[2016.05.27-02.11.59:233][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BrainComponent
-[2016.05.27-02.11.59:233][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named KismetAIAsyncTaskProxy
-[2016.05.27-02.11.59:233][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named KismetAIHelperLibrary
-[2016.05.27-02.11.59:233][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BehaviorTree
-[2016.05.27-02.11.59:234][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BehaviorTreeComponent
-[2016.05.27-02.11.59:234][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BehaviorTreeManager
-[2016.05.27-02.11.59:235][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BehaviorTreeTypes
-[2016.05.27-02.11.59:235][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardComponent
-[2016.05.27-02.11.59:235][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardData
-[2016.05.27-02.11.59:236][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTAuxiliaryNode
-[2016.05.27-02.11.59:236][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTCompositeNode
-[2016.05.27-02.11.59:236][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator
-[2016.05.27-02.11.59:237][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTFunctionLibrary
-[2016.05.27-02.11.59:237][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTNode
-[2016.05.27-02.11.59:238][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTService
-[2016.05.27-02.11.59:238][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTaskNode
-[2016.05.27-02.11.59:239][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyAllTypes
-[2016.05.27-02.11.59:239][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType
-[2016.05.27-02.11.59:239][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Bool
-[2016.05.27-02.11.59:240][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Class
-[2016.05.27-02.11.59:240][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Enum
-[2016.05.27-02.11.59:241][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Float
-[2016.05.27-02.11.59:241][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Int
-[2016.05.27-02.11.59:241][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Name
-[2016.05.27-02.11.59:242][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_NativeEnum
-[2016.05.27-02.11.59:242][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Object
-[2016.05.27-02.11.59:243][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_String
-[2016.05.27-02.11.59:243][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Vector
-[2016.05.27-02.11.59:243][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTComposite_Selector
-[2016.05.27-02.11.59:244][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTComposite_Sequence
-[2016.05.27-02.11.59:244][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTComposite_SimpleParallel
-[2016.05.27-02.11.59:245][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_Blackboard
-[2016.05.27-02.11.59:245][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_BlackboardBase
-[2016.05.27-02.11.59:245][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_BlueprintBase
-[2016.05.27-02.11.59:246][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_CompareBBEntries
-[2016.05.27-02.11.59:246][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_ConeCheck
-[2016.05.27-02.11.59:247][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_Cooldown
-[2016.05.27-02.11.59:247][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_DoesPathExist
-[2016.05.27-02.11.59:247][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_ForceSuccess
-[2016.05.27-02.11.59:248][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_KeepInCone
-[2016.05.27-02.11.59:248][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_Loop
-[2016.05.27-02.11.59:249][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_Optional
-[2016.05.27-02.11.59:249][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_ReachedMoveGoal
-[2016.05.27-02.11.59:249][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_TimeLimit
-[2016.05.27-02.11.59:250][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTService_BlackboardBase
-[2016.05.27-02.11.59:250][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTService_BlueprintBase
-[2016.05.27-02.11.59:251][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTService_DefaultFocus
-[2016.05.27-02.11.59:251][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_BlackboardBase
-[2016.05.27-02.11.59:252][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_BlueprintBase
-[2016.05.27-02.11.59:252][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_MakeNoise
-[2016.05.27-02.11.59:252][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_MoveDirectlyToward
-[2016.05.27-02.11.59:253][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_MoveTo
-[2016.05.27-02.11.59:253][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_PlaySound
-[2016.05.27-02.11.59:254][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_RunBehavior
-[2016.05.27-02.11.59:254][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_RunEQSQuery
-[2016.05.27-02.11.59:255][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_Wait
-[2016.05.27-02.11.59:255][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQuery
-[2016.05.27-02.11.59:256][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryContext
-[2016.05.27-02.11.59:256][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator
-[2016.05.27-02.11.59:256][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryManager
-[2016.05.27-02.11.59:257][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryOption
-[2016.05.27-02.11.59:257][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTest
-[2016.05.27-02.11.59:258][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTypes
-[2016.05.27-02.11.59:258][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EQSQueryResultSourceInterface
-[2016.05.27-02.11.59:259][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EQSRenderingComponent
-[2016.05.27-02.11.59:259][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EQSTestingPawn
-[2016.05.27-02.11.59:260][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryContext_BlueprintBase
-[2016.05.27-02.11.59:260][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryContext_Item
-[2016.05.27-02.11.59:261][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryContext_Querier
-[2016.05.27-02.11.59:261][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator_Composite
-[2016.05.27-02.11.59:262][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator_OnCircle
-[2016.05.27-02.11.59:262][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator_PathingGrid
-[2016.05.27-02.11.59:263][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator_ProjectedPoints
-[2016.05.27-02.11.59:263][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator_SimpleGrid
-[2016.05.27-02.11.59:264][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryAllItemTypes
-[2016.05.27-02.11.59:264][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType
-[2016.05.27-02.11.59:264][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType_Actor
-[2016.05.27-02.11.59:265][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType_ActorBase
-[2016.05.27-02.11.59:266][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType_Direction
-[2016.05.27-02.11.59:266][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType_Point
-[2016.05.27-02.11.59:267][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType_VectorBase
-[2016.05.27-02.11.59:267][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTest_Distance
-[2016.05.27-02.11.59:268][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTest_Dot
-[2016.05.27-02.11.59:268][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTest_Pathfinding
-[2016.05.27-02.11.59:269][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTest_Trace
-[2016.05.27-02.11.59:269][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named CrowdAgentInterface
-[2016.05.27-02.11.59:270][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named CrowdFollowingComponent
-[2016.05.27-02.11.59:270][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named CrowdManager
-[2016.05.27-02.11.59:271][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PathFollowingComponent
-[2016.05.27-02.11.59:272][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PawnSensingComponent
-[2016.05.27-02.11.59:272][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EditorGameAgnosticSettings
-[2016.05.27-02.11.59:273][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EditorUserSettings
-[2016.05.27-02.11.59:273][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SpriteComponent
-[2016.05.27-02.11.59:274][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialSpriteComponent
-[2016.05.27-02.11.59:274][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named WidgetBlueprint
-[2016.05.27-02.11.59:275][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SReply
-[2016.05.27-02.11.59:275][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ScriptComponent
-[2016.05.27-02.11.59:276][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PaperRenderComponent
-[2016.05.27-02.11.59:276][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PaperAnimatedRenderComponent
-[2016.05.27-02.11.59:277][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PaperRenderActor
-[2016.05.27-02.11.59:278][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PaperTileMapRenderComponent
-[2016.05.27-02.11.59:278][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PaperSpriteSheet
-[2016.05.27-02.11.59:279][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ECollisionTraceFlag
-[2016.05.27-02.11.59:280][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EBodyCollisionResponse
-[2016.05.27-02.11.59:280][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EPhysicsType
-[2016.05.27-02.11.59:281][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PlayerCamera
-[2016.05.27-02.11.59:281][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EModifyFrequency
-[2016.05.27-02.11.59:282][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EMaterialLightingModel
-[2016.05.27-02.11.59:282][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named GameReplicationInfo
-[2016.05.27-02.11.59:283][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named GameInfo
-[2016.05.27-02.11.59:284][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PlayerReplicationInfo
-[2016.05.27-02.11.59:284][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimGraphNode_BlendSpace
-[2016.05.27-02.11.59:285][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_BlendSpace
-[2016.05.27-02.11.59:286][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ETransitionGetterType
-[2016.05.27-02.11.59:286][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ESlateCheckBoxState
-[2016.05.27-02.11.59:287][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SlateWidgetStyleAsset
-[2016.05.27-02.11.59:288][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SlateWidgetStyleContainerBase
-[2016.05.27-02.11.59:289][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named InstancedFoliageSettings
-[2016.05.27-02.11.59:290][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named FoliageType
-[2016.05.27-02.11.59:291][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named FoliageType_InstancedStaticMesh
-[2016.05.27-02.11.59:292][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named InstancedFoliageActor
-[2016.05.27-02.11.59:292][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named InteractiveFoliageComponent
-[2016.05.27-02.11.59:293][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named FoliageVertexColorMask
-[2016.05.27-02.11.59:294][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EmitterSpawnable
-[2016.05.27-02.11.59:295][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EBoneSpaces
-[2016.05.27-02.11.59:372][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.05.27-02.11.59:549][  0]LogRenderer: Reallocating scene render targets to support 1004x716 (Frame:2).
-[2016.05.27-02.11.59:656][  1]Cmd: UpdateLandscapeEditorData -warnings
-[2016.05.27-02.12.06:389][ 17]LogAssetRegistry: Asset discovery search completed in 30.6829 seconds
-[2016.05.27-02.12.06:389][ 17]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2016.05.27-02.12.06:389][ 17]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000018 seconds (updated 0 objects)
-[2016.05.27-02.12.07:976][ 79]Cmd: QUIT_EDITOR
-[2016.05.27-02.12.08:178][ 79]LogExit: Preparing to exit.
-[2016.05.27-02.12.08:543][ 79]LogExit: Editor shut down
-[2016.05.27-02.12.08:543][ 79]LogExit: Transaction tracking system shut down
-[2016.05.27-02.12.08:556][ 79]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004728B740
-[2016.05.27-02.12.08:558][ 79]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000005611A520
-[2016.05.27-02.12.08:732][ 79]LogExit: Object subsystem successfully closed.
-[2016.05.27-02.12.08:749][ 79]LogD3D11RHI: Shutdown
-[2016.05.27-02.12.08:749][ 79]LogD3D11RHI: CleanupD3DDevice
-[2016.05.27-02.12.08:810][ 79]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.05.27-02.12.08:828][ 79]LogModuleManager: Shutting down and abandoning module CrashTracker (198)
-[2016.05.27-02.12.08:828][ 79]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
-[2016.05.27-02.12.08:828][ 79]LogModuleManager: Shutting down and abandoning module SuperSearch (196)
-[2016.05.27-02.12.08:828][ 79]LogModuleManager: Shutting down and abandoning module WidgetCarousel (195)
-[2016.05.27-02.12.08:828][ 79]LogModuleManager: Shutting down and abandoning module AddContentDialog (194)
-[2016.05.27-02.12.08:828][ 79]LogModuleManager: Shutting down and abandoning module EditorWidgets (193)
-[2016.05.27-02.12.08:828][ 79]LogModuleManager: Shutting down and abandoning module CollectionManager (192)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module BspMode (185)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
-[2016.05.27-02.12.08:829][ 79]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module MergeActors (169)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module SizeMap (168)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module TreeMap (167)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module XmlParser (158)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module Blutility (157)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
-[2016.05.27-02.12.09:796][ 79]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module AutomationController (146)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module Layers (144)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module Persona (140)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module Kismet (139)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module Toolbox (136)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module OutputLog (133)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module GammaUI (132)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module Documentation (131)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module Analytics (127)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module AIModule (124)
-[2016.05.27-02.12.09:797][ 79]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
-[2016.05.27-02.12.09:859][ 79]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
-[2016.05.27-02.12.09:859][ 79]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
-[2016.05.27-02.12.09:859][ 79]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
-[2016.05.27-02.12.09:859][ 79]LogModuleManager: Shutting down and abandoning module SteamVR (119)
-[2016.05.27-02.12.09:859][ 79]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
-[2016.05.27-02.12.09:859][ 79]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
-[2016.05.27-02.12.09:859][ 79]LogModuleManager: Shutting down and abandoning module OculusInput (116)
-[2016.05.27-02.12.09:859][ 79]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module CableComponent (113)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module SourceControl (100)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module HotReload (93)
-[2016.05.27-02.12.09:866][ 79]LogModuleManager: Shutting down and abandoning module MainFrame (92)
-[2016.05.27-02.12.09:867][ 79]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
-[2016.05.27-02.12.09:867][ 79]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
-[2016.05.27-02.12.09:868][ 79]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
-[2016.05.27-02.12.09:978][ 79]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
-[2016.05.27-02.12.09:979][ 79]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
-[2016.05.27-02.12.09:979][ 79]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
-[2016.05.27-02.12.10:079][ 79]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
-[2016.05.27-02.12.10:079][ 79]LogModuleManager: Shutting down and abandoning module Paper2D (84)
-[2016.05.27-02.12.10:079][ 79]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
-[2016.05.27-02.12.10:083][ 79]LogModuleManager: Shutting down and abandoning module Media (82)
-[2016.05.27-02.12.10:083][ 79]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module MessageLog (73)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module Sequencer (72)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module AssetTools (71)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module UMG (69)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module Slate (68)
-[2016.05.27-02.12.10:084][ 79]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
-[2016.05.27-02.12.10:087][ 79]LogModuleManager: Shutting down and abandoning module SessionServices (66)
-[2016.05.27-02.12.10:087][ 79]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
-[2016.05.27-02.12.10:087][ 79]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
-[2016.05.27-02.12.10:087][ 79]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
-[2016.05.27-02.12.10:087][ 79]LogModuleManager: Shutting down and abandoning module Networking (61)
-[2016.05.27-02.12.10:087][ 79]LogModuleManager: Shutting down and abandoning module Core (60)
-[2016.05.27-02.12.10:087][ 79]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
-[2016.05.27-02.12.10:087][ 79]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
-[2016.05.27-02.12.10:087][ 79]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
-[2016.05.27-02.12.10:087][ 79]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
-[2016.05.27-02.12.10:375][ 79]LogDerivedDataCache: Shutdown
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
-[2016.05.27-02.12.10:375][ 79]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.05.27-02.12.10:376][ 79]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.05.27-02.12.12:377][ 79]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.05.27-02.12.12:379][ 79]LogExit: Exiting.
-[2016.05.27-02.12.12:380][ 79]Log file closed, 05/26/16 19:12:12
+﻿[2016.05.29-18.43.25:382][  0]Log file open, 05/29/16 11:43:25
+[2016.05.29-18.43.25:382][  0]LogInit:Display: Running engine for game: GodKiller
+[2016.05.29-18.43.25:382][  0]LogPlatformFile: Not using cached read wrapper
+[2016.05.29-18.43.25:382][  0]LogInit:Display: RandInit(246937036) SRandInit(246937037).
+[2016.05.29-18.43.25:382][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.05.29-18.43.25:382][  0]LogStats: Stats thread started at 0.323991
+[2016.05.29-18.43.25:382][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.05.29-18.43.25:382][  0]LogInit: API Version: 2758231
+[2016.05.29-18.43.25:382][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
+[2016.05.29-18.43.25:382][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.05.29-18.43.25:382][  0]LogInit: Build Configuration: Development
+[2016.05.29-18.43.25:382][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.05.29-18.43.25:382][  0]LogInit: Command line:  
+[2016.05.29-18.43.25:382][  0]LogInit: Base directory: C:/Program Files/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.05.29-18.43.25:382][  0]LogInit: Rocket: 1
+[2016.05.29-18.43.25:560][  0]LogInit: Using libcurl 7.41.0
+[2016.05.29-18.43.25:560][  0]LogInit:  - built for x86_64-pc-win32
+[2016.05.29-18.43.25:560][  0]LogInit:  - supports SSL with WinSSL
+[2016.05.29-18.43.25:560][  0]LogInit:  - other features:
+[2016.05.29-18.43.25:560][  0]LogInit:      CURL_VERSION_SSL
+[2016.05.29-18.43.25:560][  0]LogInit:      CURL_VERSION_IPV6
+[2016.05.29-18.43.25:560][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.05.29-18.43.25:560][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.05.29-18.43.25:560][  0]LogInit:      CURL_VERSION_IDN
+[2016.05.29-18.43.25:560][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.05.29-18.43.25:560][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.05.29-18.43.25:560][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.05.29-18.43.25:560][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.05.29-18.43.25:560][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.05.29-18.43.25:893][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.05.29-18.43.25:914][  0]LogInit: Object subsystem initialized
+[2016.05.29-18.43.25:916][  0]LogInit: Selected Device Profile: [Windows]
+[2016.05.29-18.43.25:916][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.05.29-18.43.26:063][  0]LogInit: Computer: DESKTOP-1J5BF64
+[2016.05.29-18.43.26:063][  0]LogInit: User: tehno
+[2016.05.29-18.43.26:063][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.05.29-18.43.26:063][  0]LogInit: High frequency timer resolution =2.533207 MHz
+[2016.05.29-18.43.26:063][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.05.29-18.43.26:063][  0]LogMemory: Platform Memory Stats for Windows
+[2016.05.29-18.43.26:063][  0]LogMemory: Process Physical Memory: 60.36 MB used, 60.36 MB peak
+[2016.05.29-18.43.26:063][  0]LogMemory: Process Virtual Memory: 57.78 MB used, 57.78 MB peak
+[2016.05.29-18.43.26:063][  0]LogMemory: Physical Memory: 3968.57 MB used, 8081.01 MB total
+[2016.05.29-18.43.26:063][  0]LogMemory: Virtual Memory: 384.33 MB used, 134217728.00 MB total
+[2016.05.29-18.43.28:577][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.05.29-18.43.32:108][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 960M     (Feature Level 11_0)
+[2016.05.29-18.43.32:108][  0]LogD3D11RHI: Adapter has 1995MB of dedicated video memory, 0MB of dedicated system memory, and 4040MB of shared system memory, 1 output[s]
+[2016.05.29-18.43.32:115][  0]LogD3D11RHI: Found D3D11 adapter 1: Intel(R) HD Graphics 4600 (Feature Level 11_0)
+[2016.05.29-18.43.32:115][  0]LogD3D11RHI: Adapter has 112MB of dedicated video memory, 0MB of dedicated system memory, and 4040MB of shared system memory, 0 output[s]
+[2016.05.29-18.43.32:117][  0]LogD3D11RHI: Found D3D11 adapter 2: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.05.29-18.43.32:117][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 4040MB of shared system memory, 0 output[s]
+[2016.05.29-18.43.32:117][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.05.29-18.43.32:123][  0]LogD3D11RHI: !Direct3DDevice
+[2016.05.29-18.43.32:123][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.05.29-18.43.32:138][  0]LogD3D11RHI: Async texture creation enabled
+[2016.05.29-18.43.32:198][  0]LogShaderCompilers: Guid format shader working directory is -24 characters bigger than the processId version (../../../../../../Users/tehno/Documents/God_Killer_New/God-Killer 4.10/Intermediate/Shaders/WorkingDirectory/6008/).
+[2016.05.29-18.43.32:198][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/tehno/AppData/Local/Temp/UnrealShaderWorkingDir/ADBD062440134DCE10C5538F6A7FC971/'.
+[2016.05.29-18.43.32:198][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.05.29-18.43.40:285][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.05.29-18.43.40:295][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.05.29-18.43.40:304][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.05.29-18.43.40:313][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.05.29-18.43.40:319][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.05.29-18.43.40:357][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.05.29-18.43.40:368][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.05.29-18.43.40:379][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.05.29-18.43.40:391][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.05.29-18.43.40:403][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.05.29-18.43.40:412][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.05.29-18.43.40:427][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.05.29-18.43.40:427][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.05.29-18.43.40:430][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.05.29-18.43.40:691][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.05.29-18.43.40:696][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.05.29-18.43.40:700][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.05.29-18.43.40:762][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.05.29-18.43.40:762][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.05.29-18.43.42:998][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.05.29-18.43.43:620][  0]LogDerivedDataCache: Loaded boot cache 0.60s 41MB C:/Users/tehno/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.05.29-18.43.43:620][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/tehno/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.05.29-18.43.43:620][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/tehno/Documents/God_Killer_New/God-Killer 4.10/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.05.29-18.43.43:620][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.05.29-18.43.43:620][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/tehno/Documents/God_Killer_New/God-Killer 4.10/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.05.29-18.43.43:620][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.05.29-18.43.43:809][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.05.29-18.43.43:836][  0]LogDerivedDataCache: Using Local data cache path C:/Users/tehno/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.05.29-18.44.12:635][  0]LogInit: Selected Device Profile: [Windows]
+[2016.05.29-18.44.12:637][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.05.29-18.44.13:034][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.05.29-18.44.13:034][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.05.29-18.44.16:840][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.05.29-18.44.59:236][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.05.29-18.45.00:114][  0]LogAssetRegistry: FAssetRegistry took 0.0113 seconds to start up
+[2016.05.29-18.45.01:667][  0]SourceControl: Info Source control is disabled
+[2016.05.29-18.45.01:853][  0]SourceControl: Info Source control is disabled
+[2016.05.29-18.45.01:871][  0]SourceControl: Info Source control is disabled
+[2016.05.29-18.45.01:889][  0]SourceControl: Info Source control is disabled
+[2016.05.29-18.45.08:406][  0]LogObj: 28633 objects as part of root set at end of initial load.
+[2016.05.29-18.45.08:406][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
+[2016.05.29-18.45.08:677][  0]LogEngine: Initializing Engine...
+[2016.05.29-18.45.08:679][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.05.29-18.45.08:880][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.05.29-18.45.10:242][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.05.29-18.45.10:316][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.29-18.45.10:352][  0]LogInit: FAudioDevice initialized.
+[2016.05.29-18.45.10:404][  0]LogDerivedDataCache: Saved boot cache 0.05s 41MB C:/Users/tehno/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.05.29-18.45.10:417][  0]LogInit: Texture streaming: Enabled
+[2016.05.29-18.45.10:425][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.05.29-18.45.10:425][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.05.29-18.45.10:425][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId ff2ae08d43132c9c6560deab31976655|82a2ba43aacb4a26af7064aafe4b8476|408bd81a-a488-43d0-aafd-21e3d5a0d38c
+[2016.05.29-18.45.10:425][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.05.29-18.45.10:778][  0]LogInit: Transaction tracking system initialized
+[2016.05.29-18.45.10:847][  0]BlueprintLog: New page: Editor Load
+[2016.05.29-18.45.11:180][  0]LocalizationService: Info Localization service is disabled
+[2016.05.29-18.45.11:735][  0]LogConsoleResponse:Display: 
+[2016.05.29-18.45.22:584][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.05.29-18.45.23:506][  0]LogFileCache: Scanning file cache for directory 'C:/Users/tehno/Documents/God_Killer_New/God-Killer 4.10/Content/' took 0.15s
+[2016.05.29-18.45.23:775][  0]SourceControl: Info Source control is disabled
+[2016.05.29-18.45.23:775][  0]Cmd: MAP LOAD FILE="../../../../../../Users/tehno/Documents/God_Killer_New/God-Killer 4.10/Content/Scene/NewCave.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.05.29-18.45.23:820][  0]LightingResults: New page: Lighting Build
+[2016.05.29-18.45.23:826][  0]MapCheck: New page: Map Check
+[2016.05.29-18.45.23:826][  0]LightingResults: New page: Lighting Build
+[2016.05.29-18.45.23:850][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020C93993B00
+[2016.05.29-18.45.29:250][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
+[2016.05.29-18.45.29:252][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0131.11] Compile of GnawmerWander successful, but with 1 Warning(s) [in 5 ms]
+[2016.05.29-18.45.29:252][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0131.11] Compile of GnawmerWander successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.29:253][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0131.11] Compile of GnawmerWander successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.31:197][  0]LogBlueprint:Warning: [compiler Wander2] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
+[2016.05.29-18.45.31:199][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0133.06] Compile of Wander2 successful, but with 1 Warning(s) [in 10 ms]
+[2016.05.29-18.45.31:200][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0133.06] Compile of Wander2 successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.31:200][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0133.06] Compile of Wander2 successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.34:168][  0]LogBlueprint:Warning: [compiler Wander] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
+[2016.05.29-18.45.34:170][  0]LogBlueprint:Warning: [compiler Wander] Warning [0136.03] Compile of Wander successful, but with 1 Warning(s) [in 4 ms]
+[2016.05.29-18.45.34:170][  0]LogBlueprint:Warning: [compiler Wander] Warning [0136.03] Compile of Wander successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.34:170][  0]LogBlueprint:Warning: [compiler Wander] Warning [0136.03] Compile of Wander successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.36:199][  0]LogBlueprint:Warning: [compiler Wander3] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
+[2016.05.29-18.45.36:205][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0138.06] Compile of Wander3 successful, but with 1 Warning(s) [in 13 ms]
+[2016.05.29-18.45.36:205][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0138.06] Compile of Wander3 successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.36:205][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0138.06] Compile of Wander3 successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.38:687][  0]LogBlueprint:Warning: [compiler Gui] Warning 'gnawmers' is already a 'Enemy 1', you don't need  Cast To Enemy1 .
+[2016.05.29-18.45.38:694][  0]LogBlueprint:Warning: [compiler Gui] Warning Event Reply  Return Value  should not be empty.  Return a reply such as Handled or Unhandled.
+[2016.05.29-18.45.38:694][  0]LogBlueprint:Warning: [compiler Gui] Warning Event Reply  Return Value  should not be empty.  Return a reply such as Handled or Unhandled.
+[2016.05.29-18.45.38:696][  0]LogBlueprint:Warning: [compiler Gui] Warning [0140.55] Compile of Gui successful, but with 3 Warning(s) [in 20 ms]
+[2016.05.29-18.45.38:696][  0]LogBlueprint:Warning: [compiler Gui] Warning [0140.55] Compile of Gui successful, but with 4 Warning(s) [in 0 ms]
+[2016.05.29-18.45.38:696][  0]LogBlueprint:Warning: [compiler Gui] Warning [0140.55] Compile of Gui successful, but with 5 Warning(s) [in 0 ms]
+[2016.05.29-18.45.38:868][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning 'gnawmers' is already a 'Enemy 1', you don't need  Cast To Enemy1 .
+[2016.05.29-18.45.38:869][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0140.73] Compile of GnawmersHealth successful, but with 1 Warning(s) [in 2 ms]
+[2016.05.29-18.45.38:869][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0140.73] Compile of GnawmersHealth successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.38:870][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0140.73] Compile of GnawmersHealth successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.40:619][  0]LogBlueprint:Warning: [compiler Wander4] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
+[2016.05.29-18.45.40:621][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0142.48] Compile of Wander4 successful, but with 1 Warning(s) [in 4 ms]
+[2016.05.29-18.45.40:621][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0142.48] Compile of Wander4 successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.40:621][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0142.48] Compile of Wander4 successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.40:931][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
+[2016.05.29-18.45.40:933][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0142.79] Compile of GnawmerWander successful, but with 1 Warning(s) [in 6 ms]
+[2016.05.29-18.45.40:933][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0142.79] Compile of GnawmerWander successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.40:933][  0]LogBlueprint:Warning: [compiler GnawmerWander] Warning [0142.79] Compile of GnawmerWander successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.40:970][  0]LogBlueprint:Warning: [compiler Wander2] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
+[2016.05.29-18.45.40:971][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0142.83] Compile of Wander2 successful, but with 1 Warning(s) [in 2 ms]
+[2016.05.29-18.45.40:971][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0142.83] Compile of Wander2 successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.40:971][  0]LogBlueprint:Warning: [compiler Wander2] Warning [0142.83] Compile of Wander2 successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.41:024][  0]LogBlueprint:Warning: [compiler Wander] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
+[2016.05.29-18.45.41:025][  0]LogBlueprint:Warning: [compiler Wander] Warning [0142.88] Compile of Wander successful, but with 1 Warning(s) [in 4 ms]
+[2016.05.29-18.45.41:025][  0]LogBlueprint:Warning: [compiler Wander] Warning [0142.88] Compile of Wander successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.41:025][  0]LogBlueprint:Warning: [compiler Wander] Warning [0142.88] Compile of Wander successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.41:056][  0]LogBlueprint:Warning: [compiler Wander3] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
+[2016.05.29-18.45.41:058][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0142.91] Compile of Wander3 successful, but with 1 Warning(s) [in 3 ms]
+[2016.05.29-18.45.41:058][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0142.91] Compile of Wander3 successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.41:058][  0]LogBlueprint:Warning: [compiler Wander3] Warning [0142.91] Compile of Wander3 successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.41:142][  0]LogBlueprint:Warning: [compiler Gui] Warning 'gnawmers' is already a 'Enemy 1', you don't need  Cast To Enemy1 .
+[2016.05.29-18.45.41:152][  0]LogBlueprint:Warning: [compiler Gui] Warning Event Reply  Return Value  should not be empty.  Return a reply such as Handled or Unhandled.
+[2016.05.29-18.45.41:152][  0]LogBlueprint:Warning: [compiler Gui] Warning Event Reply  Return Value  should not be empty.  Return a reply such as Handled or Unhandled.
+[2016.05.29-18.45.41:155][  0]LogBlueprint:Warning: [compiler Gui] Warning [0143.01] Compile of Gui successful, but with 3 Warning(s) [in 22 ms]
+[2016.05.29-18.45.41:155][  0]LogBlueprint:Warning: [compiler Gui] Warning [0143.01] Compile of Gui successful, but with 4 Warning(s) [in 0 ms]
+[2016.05.29-18.45.41:162][  0]LogBlueprint:Warning: [compiler Gui] Warning [0143.02] Compile of Gui successful, but with 5 Warning(s) [in 6 ms]
+[2016.05.29-18.45.41:204][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning 'gnawmers' is already a 'Enemy 1', you don't need  Cast To Enemy1 .
+[2016.05.29-18.45.41:204][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0143.06] Compile of GnawmersHealth successful, but with 1 Warning(s) [in 1 ms]
+[2016.05.29-18.45.41:204][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0143.06] Compile of GnawmersHealth successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.41:205][  0]LogBlueprint:Warning: [compiler GnawmersHealth] Warning [0143.06] Compile of GnawmersHealth successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.45.41:215][  0]LogBlueprint:Warning: [compiler Wander4] Warning  Get Random Point in Radius  is deprecated; please replace or remove it.
+[2016.05.29-18.45.41:216][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0143.07] Compile of Wander4 successful, but with 1 Warning(s) [in 2 ms]
+[2016.05.29-18.45.41:216][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0143.07] Compile of Wander4 successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.45.41:216][  0]LogBlueprint:Warning: [compiler Wander4] Warning [0143.07] Compile of Wander4 successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.46.20:120][  0]LogBlueprint:Warning: [compiler NewCave] Warning Node  Unknown  is not referencing a valid level actor
+[2016.05.29-18.46.20:127][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0181.98] Compile of NewCave successful, but with 1 Warning(s) [in 55 ms]
+[2016.05.29-18.46.20:127][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0181.98] Compile of NewCave successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.46.20:127][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0181.98] Compile of NewCave successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.46.20:196][  0]LogBlueprint:Warning: [compiler NewCave] Warning Node  Unknown  is not referencing a valid level actor
+[2016.05.29-18.46.20:201][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0182.06] Compile of NewCave successful, but with 1 Warning(s) [in 51 ms]
+[2016.05.29-18.46.20:201][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0182.06] Compile of NewCave successful, but with 2 Warning(s) [in 0 ms]
+[2016.05.29-18.46.20:201][  0]LogBlueprint:Warning: [compiler NewCave] Warning [0182.06] Compile of NewCave successful, but with 3 Warning(s) [in 0 ms]
+[2016.05.29-18.47.04:718][  0]LogDerivedDataCache:Warning: C:/Users/tehno/AppData/Local/UnrealEngine/Common/DerivedDataCache access is very slow (0.40MB/s), consider disabling it.
+[2016.05.29-18.48.44:754][  0]LogAIModule: Creating AISystem for world NewCave
+[2016.05.29-18.48.54:629][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.05.29-18.48.54:660][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.05.29-18.48.54:965][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 304.926ms to complete.
+[2016.05.29-18.48.54:965][  0]LogFileHelpers: Loading map 'NewCave' took 211.190
+[2016.05.29-18.48.55:221][  0]LogCollectionManager: Loaded 0 collections in 0.003440 seconds
+[2016.05.29-18.48.55:272][  0]LogFileCache: Scanning file cache for directory 'C:/Users/tehno/Documents/God_Killer_New/God-Killer 4.10/Saved/Collections/' took 0.01s
+[2016.05.29-18.48.55:272][  0]LogFileCache: Scanning file cache for directory 'C:/Users/tehno/Documents/God_Killer_New/God-Killer 4.10/Content/Developers/tehno/Collections/' took 0.01s
+[2016.05.29-18.48.55:272][  0]LogFileCache: Scanning file cache for directory 'C:/Users/tehno/Documents/God_Killer_New/God-Killer 4.10/Content/Collections/' took 0.01s
+[2016.05.29-18.48.55:272][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000007 seconds
+[2016.05.29-18.48.55:289][  0]LogContentBrowser: Native class hierarchy populated in 0.0170 seconds. Added 1893 classes and 338 folders.
+[2016.05.29-18.48.55:303][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2016.05.29-18.48.59:669][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2016.05.29-18.49.00:098][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2016.05.29-18.49.00:676][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.05.29-18.49.00:752][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.05.29-18.49.00:779][  0]LogLoad: Full Startup: 342.63 seconds (BP compile: 1.82 seconds)
+[2016.05.29-18.49.01:132][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.05.29-18.49.01:145][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named GameplayCueNotify
+[2016.05.29-18.49.01:145][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named GameplayCueNotify_Blueprint
+[2016.05.29-18.49.01:146][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_BodySetup
+[2016.05.29-18.49.01:146][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimTreeInstance
+[2016.05.29-18.49.01:146][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VimInstance
+[2016.05.29-18.49.01:146][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VimBlueprint
+[2016.05.29-18.49.01:146][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VimGeneratedClass
+[2016.05.29-18.49.01:147][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VimBlueprintFactory
+[2016.05.29-18.49.01:147][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ReverbVolume
+[2016.05.29-18.49.01:147][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ReverbVolumeToggleable
+[2016.05.29-18.49.01:147][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlueprintActorBase
+[2016.05.29-18.49.01:148][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named WorldInfo
+[2016.05.29-18.49.01:148][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_Handle
+[2016.05.29-18.49.01:148][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_RadialForceComponent
+[2016.05.29-18.49.01:149][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SoundMode
+[2016.05.29-18.49.01:149][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_ThrusterComponent
+[2016.05.29-18.49.01:149][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_Thruster
+[2016.05.29-18.49.01:150][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_ConstraintSetup
+[2016.05.29-18.49.01:150][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_BSJointSetup
+[2016.05.29-18.49.01:150][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_HingeSetup
+[2016.05.29-18.49.01:151][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_PrismaticSetup
+[2016.05.29-18.49.01:151][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_SkelJointSetup
+[2016.05.29-18.49.01:152][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_ConstraintComponent
+[2016.05.29-18.49.01:152][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_ConstraintActor
+[2016.05.29-18.49.01:152][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_BSJointActor
+[2016.05.29-18.49.01:153][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_HingeActor
+[2016.05.29-18.49.01:153][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named RB_PrismaticActor
+[2016.05.29-18.49.01:153][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PhysicsBSJointActor
+[2016.05.29-18.49.01:154][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PhysicsHingeActor
+[2016.05.29-18.49.01:154][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PhysicsPrismaticActor
+[2016.05.29-18.49.01:154][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EMovementMode
+[2016.05.29-18.49.01:155][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SensingComponent
+[2016.05.29-18.49.01:156][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MovementComp_Character
+[2016.05.29-18.49.01:156][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MovementComp_Rotating
+[2016.05.29-18.49.01:156][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MovementComp_Projectile
+[2016.05.29-18.49.01:157][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VehicleSim
+[2016.05.29-18.49.01:157][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VehicleSimNoDrive
+[2016.05.29-18.49.01:158][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MovementComp_Vehicle
+[2016.05.29-18.49.01:158][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MovementComp_VehicleNoDrive
+[2016.05.29-18.49.01:159][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DefaultPawnMovement
+[2016.05.29-18.49.01:160][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named StaticMeshReplicatedComponent
+[2016.05.29-18.49.01:161][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SkeletalMeshReplicatedComponent
+[2016.05.29-18.49.01:161][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named Vehicle
+[2016.05.29-18.49.01:162][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VehicleMovementComponent
+[2016.05.29-18.49.01:162][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named VehicleMovementComponent4W
+[2016.05.29-18.49.01:163][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old suboject named PointLightComponent0 (old class PointLightComponent)
+[2016.05.29-18.49.01:163][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old suboject named DirectionalLightComponent0 (old class DirectionalLightComponent)
+[2016.05.29-18.49.01:164][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old suboject named SpotLightComponent0 (old class SpotLightComponent)
+[2016.05.29-18.49.01:164][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old suboject named SpectatorMovement0 (old class DefaultPawn)
+[2016.05.29-18.49.01:165][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old suboject named DefaultPawnMovement0 (old class DefaultPawn)
+[2016.05.29-18.49.01:166][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named /Script/BlueprintGraph.K2Node_CastToInterface
+[2016.05.29-18.49.01:166][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named K2Node_CallSuperFunction
+[2016.05.29-18.49.01:167][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named K2Node_MathExpression
+[2016.05.29-18.49.01:168][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named /Script/CoreUObject.K2Node_MathExpression
+[2016.05.29-18.49.01:168][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named K2Node_Comment
+[2016.05.29-18.49.01:169][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EdGraphNode_Comment
+[2016.05.29-18.49.01:169][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SpotLightMovable
+[2016.05.29-18.49.01:170][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SpotLightStatic
+[2016.05.29-18.49.01:171][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SpotLightStationary
+[2016.05.29-18.49.01:171][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PointLightMovable
+[2016.05.29-18.49.01:172][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PointLightStatic
+[2016.05.29-18.49.01:173][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PointLightStationary
+[2016.05.29-18.49.01:174][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DirectionalLightMovable
+[2016.05.29-18.49.01:175][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DirectionalLightStatic
+[2016.05.29-18.49.01:176][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DirectionalLightStationary
+[2016.05.29-18.49.01:176][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named InterpActor
+[2016.05.29-18.49.01:177][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PhysicsActor
+[2016.05.29-18.49.01:178][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SkeletalPhysicsActor
+[2016.05.29-18.49.01:179][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SingleAnimSkeletalActor
+[2016.05.29-18.49.01:180][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SingleAnimSkeletalComponent
+[2016.05.29-18.49.01:181][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DynamicBlockingVolume
+[2016.05.29-18.49.01:181][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DynamicPhysicsVolume
+[2016.05.29-18.49.01:182][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named DynamicTriggerVolume
+[2016.05.29-18.49.01:183][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_SkeletalControlBase
+[2016.05.29-18.49.01:184][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_TwoBoneIK
+[2016.05.29-18.49.01:185][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_RotationMultiplier
+[2016.05.29-18.49.01:185][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_ModifyBone
+[2016.05.29-18.49.01:186][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_CopyBone
+[2016.05.29-18.49.01:187][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_SpringBone
+[2016.05.29-18.49.01:188][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named NavAreaDefinition
+[2016.05.29-18.49.01:189][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named NavAreaDefault
+[2016.05.29-18.49.01:190][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named NavAreaNull
+[2016.05.29-18.49.01:191][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SmartNavLinkComponent
+[2016.05.29-18.49.01:192][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ELockedAxis
+[2016.05.29-18.49.01:193][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_RunQuery
+[2016.05.29-18.49.01:194][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MoveComponentAction
+[2016.05.29-18.49.01:196][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AIDebugComponent
+[2016.05.29-18.49.01:197][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionTerrainLayerCoords
+[2016.05.29-18.49.01:199][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionTerrainLayerSwitch
+[2016.05.29-18.49.01:200][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionTerrainLayerWeight
+[2016.05.29-18.49.01:202][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named Landscape
+[2016.05.29-18.49.01:203][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeGizmoActiveActor
+[2016.05.29-18.49.01:205][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeGizmoActor
+[2016.05.29-18.49.01:206][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeProxy
+[2016.05.29-18.49.01:208][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ControlPointMeshComponent
+[2016.05.29-18.49.01:209][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeComponent
+[2016.05.29-18.49.01:210][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeGizmoRenderComponent
+[2016.05.29-18.49.01:212][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeHeightfieldCollisionComponent
+[2016.05.29-18.49.01:213][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeInfo
+[2016.05.29-18.49.01:215][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeInfoMap
+[2016.05.29-18.49.01:217][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeLayerInfoObject
+[2016.05.29-18.49.01:218][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeMaterialInstanceConstant
+[2016.05.29-18.49.01:219][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeMeshCollisionComponent
+[2016.05.29-18.49.01:220][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeSplineControlPoint
+[2016.05.29-18.49.01:221][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeSplineSegment
+[2016.05.29-18.49.01:223][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named LandscapeSplinesComponent
+[2016.05.29-18.49.01:225][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionLandscapeLayerBlend
+[2016.05.29-18.49.01:226][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionLandscapeLayerCoords
+[2016.05.29-18.49.01:228][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionLandscapeLayerSwitch
+[2016.05.29-18.49.01:229][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionLandscapeLayerWeight
+[2016.05.29-18.49.01:230][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialExpressionLandscapeVisibilityMask
+[2016.05.29-18.49.01:231][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ProceduralFoliageActor
+[2016.05.29-18.49.01:233][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ProceduralFoliage
+[2016.05.29-18.49.01:234][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm
+[2016.05.29-18.49.01:235][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_Automatic
+[2016.05.29-18.49.01:236][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_BitwiseCompressOnly
+[2016.05.29-18.49.01:238][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_LeastDestructive
+[2016.05.29-18.49.01:239][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_PerTrackCompression
+[2016.05.29-18.49.01:240][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_RemoveEverySecondKey
+[2016.05.29-18.49.01:241][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_RemoveLinearKeys
+[2016.05.29-18.49.01:243][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_RemoveTrivialKeys
+[2016.05.29-18.49.01:244][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimationCompressionAlgorithm_RevertToRaw
+[2016.05.29-18.49.01:246][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AIController
+[2016.05.29-18.49.01:247][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AIResourceInterface
+[2016.05.29-18.49.01:247][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AISystem
+[2016.05.29-18.49.01:248][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AITypes
+[2016.05.29-18.49.01:249][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BrainComponent
+[2016.05.29-18.49.01:250][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named KismetAIAsyncTaskProxy
+[2016.05.29-18.49.01:251][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named KismetAIHelperLibrary
+[2016.05.29-18.49.01:252][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BehaviorTree
+[2016.05.29-18.49.01:253][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BehaviorTreeComponent
+[2016.05.29-18.49.01:254][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BehaviorTreeManager
+[2016.05.29-18.49.01:255][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BehaviorTreeTypes
+[2016.05.29-18.49.01:256][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardComponent
+[2016.05.29-18.49.01:257][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardData
+[2016.05.29-18.49.01:258][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTAuxiliaryNode
+[2016.05.29-18.49.01:258][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTCompositeNode
+[2016.05.29-18.49.01:260][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator
+[2016.05.29-18.49.01:261][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTFunctionLibrary
+[2016.05.29-18.49.01:262][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTNode
+[2016.05.29-18.49.01:263][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTService
+[2016.05.29-18.49.01:264][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTaskNode
+[2016.05.29-18.49.01:265][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyAllTypes
+[2016.05.29-18.49.01:266][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType
+[2016.05.29-18.49.01:266][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Bool
+[2016.05.29-18.49.01:267][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Class
+[2016.05.29-18.49.01:268][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Enum
+[2016.05.29-18.49.01:270][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Float
+[2016.05.29-18.49.01:271][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Int
+[2016.05.29-18.49.01:272][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Name
+[2016.05.29-18.49.01:273][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_NativeEnum
+[2016.05.29-18.49.01:274][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Object
+[2016.05.29-18.49.01:275][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_String
+[2016.05.29-18.49.01:277][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BlackboardKeyType_Vector
+[2016.05.29-18.49.01:278][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTComposite_Selector
+[2016.05.29-18.49.01:279][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTComposite_Sequence
+[2016.05.29-18.49.01:280][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTComposite_SimpleParallel
+[2016.05.29-18.49.01:281][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_Blackboard
+[2016.05.29-18.49.01:282][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_BlackboardBase
+[2016.05.29-18.49.01:283][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_BlueprintBase
+[2016.05.29-18.49.01:284][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_CompareBBEntries
+[2016.05.29-18.49.01:286][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_ConeCheck
+[2016.05.29-18.49.01:287][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_Cooldown
+[2016.05.29-18.49.01:288][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_DoesPathExist
+[2016.05.29-18.49.01:289][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_ForceSuccess
+[2016.05.29-18.49.01:290][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_KeepInCone
+[2016.05.29-18.49.01:292][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_Loop
+[2016.05.29-18.49.01:294][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_Optional
+[2016.05.29-18.49.01:295][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_ReachedMoveGoal
+[2016.05.29-18.49.01:297][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTDecorator_TimeLimit
+[2016.05.29-18.49.01:299][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTService_BlackboardBase
+[2016.05.29-18.49.01:301][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTService_BlueprintBase
+[2016.05.29-18.49.01:302][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTService_DefaultFocus
+[2016.05.29-18.49.01:303][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_BlackboardBase
+[2016.05.29-18.49.01:304][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_BlueprintBase
+[2016.05.29-18.49.01:305][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_MakeNoise
+[2016.05.29-18.49.01:307][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_MoveDirectlyToward
+[2016.05.29-18.49.01:309][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_MoveTo
+[2016.05.29-18.49.01:310][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_PlaySound
+[2016.05.29-18.49.01:312][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_RunBehavior
+[2016.05.29-18.49.01:313][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_RunEQSQuery
+[2016.05.29-18.49.01:314][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named BTTask_Wait
+[2016.05.29-18.49.01:316][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQuery
+[2016.05.29-18.49.01:317][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryContext
+[2016.05.29-18.49.01:318][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator
+[2016.05.29-18.49.01:320][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryManager
+[2016.05.29-18.49.01:321][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryOption
+[2016.05.29-18.49.01:322][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTest
+[2016.05.29-18.49.01:324][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTypes
+[2016.05.29-18.49.01:326][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EQSQueryResultSourceInterface
+[2016.05.29-18.49.01:328][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EQSRenderingComponent
+[2016.05.29-18.49.01:329][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EQSTestingPawn
+[2016.05.29-18.49.01:330][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryContext_BlueprintBase
+[2016.05.29-18.49.01:332][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryContext_Item
+[2016.05.29-18.49.01:333][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryContext_Querier
+[2016.05.29-18.49.01:334][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator_Composite
+[2016.05.29-18.49.01:336][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator_OnCircle
+[2016.05.29-18.49.01:337][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator_PathingGrid
+[2016.05.29-18.49.01:339][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator_ProjectedPoints
+[2016.05.29-18.49.01:341][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryGenerator_SimpleGrid
+[2016.05.29-18.49.01:342][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryAllItemTypes
+[2016.05.29-18.49.01:344][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType
+[2016.05.29-18.49.01:346][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType_Actor
+[2016.05.29-18.49.01:347][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType_ActorBase
+[2016.05.29-18.49.01:349][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType_Direction
+[2016.05.29-18.49.01:350][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType_Point
+[2016.05.29-18.49.01:351][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryItemType_VectorBase
+[2016.05.29-18.49.01:353][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTest_Distance
+[2016.05.29-18.49.01:354][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTest_Dot
+[2016.05.29-18.49.01:356][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTest_Pathfinding
+[2016.05.29-18.49.01:358][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EnvQueryTest_Trace
+[2016.05.29-18.49.01:359][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named CrowdAgentInterface
+[2016.05.29-18.49.01:361][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named CrowdFollowingComponent
+[2016.05.29-18.49.01:362][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named CrowdManager
+[2016.05.29-18.49.01:364][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PathFollowingComponent
+[2016.05.29-18.49.01:365][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PawnSensingComponent
+[2016.05.29-18.49.01:367][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EditorGameAgnosticSettings
+[2016.05.29-18.49.01:368][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EditorUserSettings
+[2016.05.29-18.49.01:370][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SpriteComponent
+[2016.05.29-18.49.01:371][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named MaterialSpriteComponent
+[2016.05.29-18.49.01:373][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named WidgetBlueprint
+[2016.05.29-18.49.01:375][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SReply
+[2016.05.29-18.49.01:378][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ScriptComponent
+[2016.05.29-18.49.01:379][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PaperRenderComponent
+[2016.05.29-18.49.01:381][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PaperAnimatedRenderComponent
+[2016.05.29-18.49.01:383][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PaperRenderActor
+[2016.05.29-18.49.01:384][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PaperTileMapRenderComponent
+[2016.05.29-18.49.01:386][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PaperSpriteSheet
+[2016.05.29-18.49.01:387][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ECollisionTraceFlag
+[2016.05.29-18.49.01:389][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EBodyCollisionResponse
+[2016.05.29-18.49.01:391][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EPhysicsType
+[2016.05.29-18.49.01:393][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PlayerCamera
+[2016.05.29-18.49.01:395][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EModifyFrequency
+[2016.05.29-18.49.01:397][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EMaterialLightingModel
+[2016.05.29-18.49.01:398][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named GameReplicationInfo
+[2016.05.29-18.49.01:400][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named GameInfo
+[2016.05.29-18.49.01:402][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named PlayerReplicationInfo
+[2016.05.29-18.49.01:403][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimGraphNode_BlendSpace
+[2016.05.29-18.49.01:405][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named AnimNode_BlendSpace
+[2016.05.29-18.49.01:407][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ETransitionGetterType
+[2016.05.29-18.49.01:409][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named ESlateCheckBoxState
+[2016.05.29-18.49.01:410][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SlateWidgetStyleAsset
+[2016.05.29-18.49.01:412][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named SlateWidgetStyleContainerBase
+[2016.05.29-18.49.01:414][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named InstancedFoliageSettings
+[2016.05.29-18.49.01:415][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named FoliageType
+[2016.05.29-18.49.01:417][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named FoliageType_InstancedStaticMesh
+[2016.05.29-18.49.01:419][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named InstancedFoliageActor
+[2016.05.29-18.49.01:420][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named InteractiveFoliageComponent
+[2016.05.29-18.49.01:422][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named FoliageVertexColorMask
+[2016.05.29-18.49.01:424][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EmitterSpawnable
+[2016.05.29-18.49.01:426][  0]LoadErrors:Error: Error ActiveClassRedirects contains a collision with multiple redirectors for old class named EBoneSpaces
+[2016.05.29-18.49.02:569][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.05.29-18.49.03:019][  0]LogRenderer: Reallocating scene render targets to support 956x704 (Frame:2).
+[2016.05.29-18.49.03:665][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.05.29-18.49.14:710][ 26]LogAssetRegistry: Asset discovery search completed in 254.6073 seconds
+[2016.05.29-18.49.14:710][ 26]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.05.29-18.49.14:710][ 26]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000036 seconds (updated 0 objects)
+[2016.05.29-18.49.17:797][ 36]LogSynthBenchmark:Display: FSynthBenchmark (V0.95):  requested WorkScale=1.00
+[2016.05.29-18.49.17:797][ 36]LogSynthBenchmark:Display: ===============
+[2016.05.29-18.49.17:797][ 36]LogSynthBenchmark:Display: Main Processor:
+[2016.05.29-18.49.17:840][ 36]LogSynthBenchmark:Display:          ... 0.020949 s/Run 'RayIntersect'
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:          ... 0.022095 s/Run 'Fractal'
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display: 
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   CompiledTarget_x_Bits: 64
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   UE_BUILD_SHIPPING: 0
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   UE_BUILD_TEST: 0
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   UE_BUILD_DEBUG: 0
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   TotalPhysicalGBRam: 8
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   NumberOfCores (physical): 4
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   NumberOfCores (logical): 8
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   CPU Perf Index 0: 122.3
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   CPU Perf Index 1: 129.4
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:  
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display: Graphics:
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   Adapter Name: 'NVIDIA GeForce GTX 960M    '
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   (On Optimus the name might be wrong, memory should be ok)
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   Vendor Id: 0x10de
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   GPU Memory: 1996/0/4041 MB
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   CPUIndex: 122.3
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:   GPUIndex: -nan(ind)
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display: 
+[2016.05.29-18.49.17:841][ 36]LogSynthBenchmark:Display:          ... Total Time: 0.043581 sec
+[2016.05.29-18.56.15:559][544]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/tehno/Desktop/cave.FBX)
+[2016.05.29-18.56.15:831][544]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.05.29-18.56.15:832][544]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.05.29-18.56.15:832][544]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.05.29-18.56.15:832][544]LogFbx: ItemName: Model, ItemCount : 1
+[2016.05.29-18.56.15:832][544]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.05.29-18.56.15:832][544]LogFbx: ItemName: Material, ItemCount : 1
+[2016.05.29-18.56.15:832][544]LogFbx: ItemName: Texture, ItemCount : 1
+[2016.05.29-18.56.15:833][544]LogFbx: ItemName: Video, ItemCount : 1
+[2016.05.29-18.56.15:966][544]LogFbx: Loading FBX Scene from ../../../../../../Users/tehno/Desktop/cave.FBX
+[2016.05.29-18.56.16:114][544]LogFbx: FBX Scene Loaded Succesfully
+[2016.05.29-18.56.32:081][544]LogFbx: Loading FBX Scene from ../../../../../../Users/tehno/Desktop/cave.FBX
+[2016.05.29-18.56.32:227][544]LogFbx: FBX Scene Loaded Succesfully
+[2016.05.29-18.56.32:314][544]LogStaticMesh: Building static mesh cave...
+[2016.05.29-18.56.32:554][544]LogStaticMesh: Built static mesh [0.239015.2s] /Game/NewCAve/cave.cave
+[2016.05.29-18.56.32:622][544]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.05.29-19.01.50:355][110]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/NewCAve/cave" FILE="../../../../../../Users/tehno/Documents/God_Killer_New/God-Killer 4.10/Content/NewCAve/cave.uasset" SILENT=true
+[2016.05.29-19.01.50:692][110]LogSavePackage: Save=185.288055ms
+[2016.05.29-19.01.50:692][110]LogSavePackage: Moving '../../../../../../Users/tehno/Documents/God_Killer_New/God-Killer 4.10/Saved/cave4380693E4C24B2363ABE319C4C1E37C6.tmp' to '../../../../../../Users/tehno/Documents/God_Killer_New/God-Killer 4.10/Content/NewCAve/cave.uasset'
+[2016.05.29-19.01.50:721][110]LogSavePackage: Total save time: 301.108040ms
+[2016.05.29-19.01.50:721][110]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/tehno/Documents/God_Killer_New/God-Killer 4.10/Content/NewCAve/cave.uasset
+[2016.05.29-19.01.54:933][332]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020CE93CDD00
+[2016.05.29-19.01.54:934][332]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020D0B565DA0
+[2016.05.29-19.01.57:364][404]Cmd: QUIT_EDITOR
+[2016.05.29-19.01.57:950][404]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.05.29-19.01.58:245][404]LogExit: Preparing to exit.
+[2016.05.29-19.01.59:709][404]LogExit: Editor shut down
+[2016.05.29-19.01.59:709][404]LogExit: Transaction tracking system shut down
+[2016.05.29-19.01.59:777][404]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020CB1383B00
+[2016.05.29-19.02.02:241][404]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020CCBFA9B20
+[2016.05.29-19.02.02:241][404]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020CE946C2C0
+[2016.05.29-19.02.02:241][404]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000020CCBD17880
+[2016.05.29-19.02.02:242][404]LogExit: Object subsystem successfully closed.
+[2016.05.29-19.02.02:438][404]LogD3D11RHI: Shutdown
+[2016.05.29-19.02.02:438][404]LogD3D11RHI: CleanupD3DDevice
+[2016.05.29-19.02.02:814][404]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.05.29-19.02.03:079][404]LogModuleManager: Shutting down and abandoning module CookingStats (201)
+[2016.05.29-19.02.03:079][404]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (200)
+[2016.05.29-19.02.03:079][404]LogModuleManager: Shutting down and abandoning module SynthBenchmark (199)
+[2016.05.29-19.02.03:079][404]LogModuleManager: Shutting down and abandoning module CrashTracker (198)
+[2016.05.29-19.02.03:079][404]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
+[2016.05.29-19.02.03:079][404]LogModuleManager: Shutting down and abandoning module SuperSearch (196)
+[2016.05.29-19.02.03:079][404]LogModuleManager: Shutting down and abandoning module WidgetCarousel (195)
+[2016.05.29-19.02.03:079][404]LogModuleManager: Shutting down and abandoning module AddContentDialog (194)
+[2016.05.29-19.02.03:100][404]LogModuleManager: Shutting down and abandoning module EditorWidgets (193)
+[2016.05.29-19.02.03:101][404]LogModuleManager: Shutting down and abandoning module CollectionManager (192)
+[2016.05.29-19.02.03:101][404]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
+[2016.05.29-19.02.03:156][404]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
+[2016.05.29-19.02.03:156][404]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
+[2016.05.29-19.02.03:156][404]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
+[2016.05.29-19.02.03:156][404]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
+[2016.05.29-19.02.03:156][404]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
+[2016.05.29-19.02.03:156][404]LogModuleManager: Shutting down and abandoning module BspMode (185)
+[2016.05.29-19.02.03:156][404]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
+[2016.05.29-19.02.03:157][404]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
+[2016.05.29-19.02.03:157][404]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
+[2016.05.29-19.02.03:157][404]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
+[2016.05.29-19.02.03:157][404]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
+[2016.05.29-19.02.03:157][404]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
+[2016.05.29-19.02.03:157][404]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
+[2016.05.29-19.02.03:225][404]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
+[2016.05.29-19.02.03:225][404]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
+[2016.05.29-19.02.03:225][404]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
+[2016.05.29-19.02.03:225][404]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
+[2016.05.29-19.02.03:225][404]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
+[2016.05.29-19.02.03:607][404]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
+[2016.05.29-19.02.03:607][404]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
+[2016.05.29-19.02.03:607][404]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
+[2016.05.29-19.02.03:607][404]LogModuleManager: Shutting down and abandoning module MergeActors (169)
+[2016.05.29-19.02.03:607][404]LogModuleManager: Shutting down and abandoning module SizeMap (168)
+[2016.05.29-19.02.03:607][404]LogModuleManager: Shutting down and abandoning module TreeMap (167)
+[2016.05.29-19.02.03:607][404]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
+[2016.05.29-19.02.03:607][404]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
+[2016.05.29-19.02.03:607][404]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
+[2016.05.29-19.02.03:607][404]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
+[2016.05.29-19.02.03:627][404]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
+[2016.05.29-19.02.03:627][404]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
+[2016.05.29-19.02.03:627][404]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
+[2016.05.29-19.02.03:627][404]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
+[2016.05.29-19.02.03:627][404]LogModuleManager: Shutting down and abandoning module XmlParser (158)
+[2016.05.29-19.02.03:627][404]LogModuleManager: Shutting down and abandoning module Blutility (157)
+[2016.05.29-19.02.03:627][404]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
+[2016.05.29-19.02.03:628][404]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
+[2016.05.29-19.02.03:628][404]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
+[2016.05.29-19.02.03:646][404]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
+[2016.05.29-19.02.03:646][404]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
+[2016.05.29-19.02.03:646][404]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
+[2016.05.29-19.02.03:646][404]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
+[2016.05.29-19.02.03:646][404]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
+[2016.05.29-19.02.03:646][404]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
+[2016.05.29-19.02.03:646][404]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
+[2016.05.29-19.02.03:646][404]LogModuleManager: Shutting down and abandoning module AutomationController (146)
+[2016.05.29-19.02.03:646][404]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
+[2016.05.29-19.02.03:646][404]LogModuleManager: Shutting down and abandoning module Layers (144)
+[2016.05.29-19.02.03:647][404]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
+[2016.05.29-19.02.03:647][404]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
+[2016.05.29-19.02.03:647][404]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
+[2016.05.29-19.02.03:647][404]LogModuleManager: Shutting down and abandoning module Persona (140)
+[2016.05.29-19.02.03:662][404]LogModuleManager: Shutting down and abandoning module Kismet (139)
+[2016.05.29-19.02.03:688][404]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
+[2016.05.29-19.02.03:774][404]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
+[2016.05.29-19.02.03:778][404]LogModuleManager: Shutting down and abandoning module Toolbox (136)
+[2016.05.29-19.02.03:778][404]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module OutputLog (133)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module GammaUI (132)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module Documentation (131)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module Analytics (127)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
+[2016.05.29-19.02.03:779][404]LogModuleManager: Shutting down and abandoning module AIModule (124)
+[2016.05.29-19.02.03:793][404]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
+[2016.05.29-19.02.03:978][404]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
+[2016.05.29-19.02.03:978][404]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
+[2016.05.29-19.02.03:978][404]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
+[2016.05.29-19.02.03:978][404]LogModuleManager: Shutting down and abandoning module SteamVR (119)
+[2016.05.29-19.02.03:978][404]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
+[2016.05.29-19.02.03:978][404]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
+[2016.05.29-19.02.03:978][404]LogModuleManager: Shutting down and abandoning module OculusInput (116)
+[2016.05.29-19.02.03:978][404]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
+[2016.05.29-19.02.04:069][404]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
+[2016.05.29-19.02.04:069][404]LogModuleManager: Shutting down and abandoning module CableComponent (113)
+[2016.05.29-19.02.04:069][404]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
+[2016.05.29-19.02.04:069][404]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
+[2016.05.29-19.02.04:069][404]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
+[2016.05.29-19.02.04:069][404]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
+[2016.05.29-19.02.04:069][404]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
+[2016.05.29-19.02.04:069][404]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
+[2016.05.29-19.02.04:070][404]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
+[2016.05.29-19.02.04:070][404]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
+[2016.05.29-19.02.04:098][404]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
+[2016.05.29-19.02.04:098][404]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
+[2016.05.29-19.02.04:098][404]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
+[2016.05.29-19.02.04:098][404]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
+[2016.05.29-19.02.04:098][404]LogModuleManager: Shutting down and abandoning module SourceControl (100)
+[2016.05.29-19.02.04:131][404]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
+[2016.05.29-19.02.04:132][404]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
+[2016.05.29-19.02.04:132][404]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
+[2016.05.29-19.02.04:132][404]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
+[2016.05.29-19.02.04:132][404]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
+[2016.05.29-19.02.04:132][404]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
+[2016.05.29-19.02.04:132][404]LogModuleManager: Shutting down and abandoning module HotReload (93)
+[2016.05.29-19.02.04:132][404]LogModuleManager: Shutting down and abandoning module MainFrame (92)
+[2016.05.29-19.02.04:132][404]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
+[2016.05.29-19.02.04:135][404]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
+[2016.05.29-19.02.04:141][404]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
+[2016.05.29-19.02.04:397][404]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
+[2016.05.29-19.02.04:398][404]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
+[2016.05.29-19.02.04:398][404]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
+[2016.05.29-19.02.04:499][404]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
+[2016.05.29-19.02.04:499][404]LogModuleManager: Shutting down and abandoning module Paper2D (84)
+[2016.05.29-19.02.04:499][404]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
+[2016.05.29-19.02.04:512][404]LogModuleManager: Shutting down and abandoning module Media (82)
+[2016.05.29-19.02.04:512][404]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
+[2016.05.29-19.02.04:513][404]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2016.05.29-19.02.04:513][404]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
+[2016.05.29-19.02.04:513][404]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
+[2016.05.29-19.02.04:513][404]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
+[2016.05.29-19.02.04:513][404]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
+[2016.05.29-19.02.04:513][404]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
+[2016.05.29-19.02.04:513][404]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
+[2016.05.29-19.02.04:513][404]LogModuleManager: Shutting down and abandoning module MessageLog (73)
+[2016.05.29-19.02.04:513][404]LogModuleManager: Shutting down and abandoning module Sequencer (72)
+[2016.05.29-19.02.04:514][404]LogModuleManager: Shutting down and abandoning module AssetTools (71)
+[2016.05.29-19.02.04:514][404]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
+[2016.05.29-19.02.04:514][404]LogModuleManager: Shutting down and abandoning module UMG (69)
+[2016.05.29-19.02.04:574][404]LogModuleManager: Shutting down and abandoning module Slate (68)
+[2016.05.29-19.02.04:574][404]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
+[2016.05.29-19.02.04:582][404]LogModuleManager: Shutting down and abandoning module SessionServices (66)
+[2016.05.29-19.02.04:582][404]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
+[2016.05.29-19.02.04:582][404]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
+[2016.05.29-19.02.04:582][404]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
+[2016.05.29-19.02.04:583][404]LogModuleManager: Shutting down and abandoning module Networking (61)
+[2016.05.29-19.02.04:583][404]LogModuleManager: Shutting down and abandoning module Core (60)
+[2016.05.29-19.02.04:583][404]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
+[2016.05.29-19.02.04:583][404]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
+[2016.05.29-19.02.04:583][404]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
+[2016.05.29-19.02.04:583][404]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
+[2016.05.29-19.02.04:668][404]LogDerivedDataCache: Shutdown
+[2016.05.29-19.02.04:668][404]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
+[2016.05.29-19.02.04:669][404]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
+[2016.05.29-19.02.04:670][404]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
+[2016.05.29-19.02.04:670][404]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
+[2016.05.29-19.02.04:670][404]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.05.29-19.02.04:670][404]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.05.29-19.02.04:670][404]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.05.29-19.02.04:670][404]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.05.29-19.02.04:670][404]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.05.29-19.02.04:670][404]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.05.29-19.02.04:670][404]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.05.29-19.02.04:670][404]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.05.29-19.02.04:671][404]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.05.29-19.02.04:671][404]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.05.29-19.02.04:671][404]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.05.29-19.02.04:671][404]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.05.29-19.02.04:671][404]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.05.29-19.02.04:671][404]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.05.29-19.02.04:671][404]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.05.29-19.02.04:671][404]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.05.29-19.02.04:671][404]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.05.29-19.02.04:672][404]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.05.29-19.02.04:672][404]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.05.29-19.02.04:672][404]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.05.29-19.02.04:672][404]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.05.29-19.02.06:677][404]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.05.29-19.02.06:678][404]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.05.29-19.02.06:678][404]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.05.29-19.02.06:678][404]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.05.29-19.02.06:678][404]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.05.29-19.02.06:678][404]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.05.29-19.02.06:678][404]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.05.29-19.02.06:713][404]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.05.29-19.02.06:713][404]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.05.29-19.02.06:713][404]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.05.29-19.02.06:738][404]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.05.29-19.02.06:738][404]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.05.29-19.02.06:738][404]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.05.29-19.02.06:738][404]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.05.29-19.02.06:759][404]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.05.29-19.02.06:779][404]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.05.29-19.02.06:806][404]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.05.29-19.02.06:834][404]LogExit: Exiting.
+[2016.05.29-19.02.06:971][404]Log file closed, 05/29/16 12:02:06
